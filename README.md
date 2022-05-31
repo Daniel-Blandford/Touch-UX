@@ -8,7 +8,7 @@ Providing adjustments to Gnome-Desktop to help improve the experience on touch s
 
 # Features
 * Gesture bar - Swipe up to display Gnome overview.
-* Force display on screen keyboard - If the keyboard doesn't display when expected, you can request it to show manually (click status bar icon - if enabled - and select 'Show keyboard' in menu).
+* Force show 'on screen keyboard' - If the keyboard doesn't display when expected, you can request it to show manually (click status bar icon - if enabled - and select 'Show keyboard' in menu).
 
 # Planned Features
 * Notification center - As the goal is to provide a fully usable touch screen experience on devices such as smartphones and PDA's, a more touch friendly notification/quick settings panel would be a logical step in the right direction.

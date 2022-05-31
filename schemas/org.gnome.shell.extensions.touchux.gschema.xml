@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.touch-ux" path="/org/gnome/shell/extensions/touch-ux/">
+    <key name="show-statusbar-icon" type="b">
+      <default>true</default>
+    </key>
+    <key name="gesture-bar-width" type="i">
+      <default>33</default>
+    </key>
+    <key name="gesture-bar-height" type="i">
+      <default>1</default>
+    </key>
+  </schema>
+</schemalist>

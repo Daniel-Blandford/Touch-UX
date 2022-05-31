@@ -1,0 +1,8 @@
+{
+    "uuid": "touch-ux@dblandford.com",
+    "name": "Touch-UX",
+    "description": "Providing adjustments to Gnome-Desktop to help improve the experience on touch screen devices such as tablets, phones and PDA's running Gnome such as the PinePhone. This is an early release with more features expected later.",
+    "version": 1,
+    "shell-version":["42"],
+    "url": "https://github.com/Daniel-Blandford/Touch-UX"
+}

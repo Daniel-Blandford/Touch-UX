@@ -10,9 +10,9 @@ Providing adjustments to Gnome-Desktop to help improve the experience on touch s
 * Gesture bar - Swipe up to display Gnome overview.
 * Force display on screen keyboard - If the keyboard doesn't display when expected, you can request it to show manually (click status bar icon - if enabled - and select 'Show keyboard' in menu).
 
-# Planned features
+# Planned Features
 * Notification center - As the goal is to provide a fully usable touch screen experience on devices such as smartphones and PDA's, a more touch friendly notification/quick settings panel would be a logical step in the right direction.
 * Edge swipe gestures - Swipe horizontally to switch apps/workspaces by default. This has not yet been implemented as I'd like to further improve on the implementation of the swipe gesture system for the gesture bar before implementing advanced edge swipe gestures elsewhere. As the project progresses I would like to make the edge gestures configurable to perform custom actions to suit the individual users needs.
 
-# Personal note
+# Personal Note
 Please bare in mind that I'm new to Linux/Gnome development and I also have a daily job to attend to and so my time may be somewhat limited to evenings and weekends at best, which is one of the reasons that I thought it would be best to look to collaborate with other Gnome Extension developers to progress this project and help to push forward the Linux phone experience with Gnome as the DE and also enabling convergence mode to be more practical as it would be able to scale up to work exactly the same as Gnome on a desktop workstation.

@@ -9,20 +9,8 @@ const Me = ExtensionUtils.getCurrentExtension();
 function init() {}
 
 function buildPrefsWidget() {
-  let gschema = Gio.SettingsSchemaSource.new_from_directory(
-    Me.dir.get_child("schemas").get_path(),
-    Gio.SettingsSchemaSource.get_default(),
-    false
-  );
+  let settings = ExtensionUtils.getSettings("org.gnome.shell.extensions.touch-ux")
 
-  this.settings = new Gio.Settings({
-    settings_schema: gschema.lookup(
-      "org.gnome.shell.extensions.touch-ux",
-      true
-    ),
-  });
-
-  // https://gjs-docs.gnome.org/gtk40/gtk.widget#index-properties
   let prefsWidget = new Gtk.Grid({
     margin_top: 16,
     margin_bottom: 16,
@@ -95,15 +83,8 @@ function buildPrefsWidget() {
   });
   prefsWidget.attach(inputShowStatusbarIcon, 1, 4, 1, 1);
   prefsWidget.attach(labelShowStatusbarIcon, 0, 4, 1, 1);
-
-  if (typeof prefsWidget.show_all === 'function') {
-    // Adds backward compatibility with Gnome 38
-    prefsWidget.show_all();
-  } else {
-    // Gnome versions >= 40
-    // https://gjs-docs.gnome.org/gtk40/gtk.widget#method-show
-    prefsWidget.show();
-  }
+    
+  prefsWidget.show();
 
   return prefsWidget;
 }

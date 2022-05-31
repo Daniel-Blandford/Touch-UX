@@ -16,3 +16,7 @@ Providing adjustments to Gnome-Desktop to help improve the experience on touch s
 
 # Personal Note
 Please bare in mind that I'm new to Linux/Gnome development and I also have a daily job to attend to and so my time may be somewhat limited to evenings and weekends at best, which is one of the reasons that I thought it would be best to look to collaborate with other Gnome Extension developers to progress this project and help to push forward the Linux phone experience with Gnome as the DE and also enabling convergence mode to be more practical as it would be able to scale up to work exactly the same as Gnome on a desktop workstation.
+
+# Donate
+Any support via donations is greatly appreciated.
+https://www.paypal.com/donate/?hosted_button_id=PMLNRKNZ3F9VY

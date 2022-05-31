@@ -19,8 +19,12 @@ let gestureBarWidth = 128;
 let gestureBarHeight = 8;
 let gestureContainerVPadding = 16;
 let animDuration = 150;
+let toggleOskTimeoutBugFix = null;
 
 function init() {
+}
+
+function enable() {
     settings = ExtensionUtils.getSettings("org.gnome.shell.extensions.touch-ux");    
     pMonitor = Main.layoutManager.primaryMonitor;
     gestureBarWidth = (pMonitor.width * settings.get_int("gesture-bar-width")) / 100;
@@ -28,9 +32,7 @@ function init() {
     
     gestureContainer = new GestureContainer();
     gestureBar = new GestureBar();
-}
-
-function enable() {
+        
     let chromeSettingsIntegrate = {
         affectsInputRegion : true,
         affectsStruts : true,
@@ -66,6 +68,16 @@ function disable() {
     Main.layoutManager.removeChrome(gestureContainer);
     Main.layoutManager.removeChrome(gestureBar);
     statusBarButton.destroy();
+    
+    statusBarButton = null;
+    settings = null;
+    pMonitor = null;
+    gestureBar = null;
+    gestureContainer = null;
+    if (toggleOskTimeoutBugFix) {
+        GLib.Source.remove(toggleOskTimeoutBugFix);
+        toggleOskTimeoutBugFix = null;
+    }
 }
 
 const GestureContainer = GObject.registerClass(
@@ -172,7 +184,7 @@ const StatusBarButton = GObject.registerClass(
             this.menu.addMenuItem(pmItem);
             pmItem.connect('activate', () => {
                 //When toggle OSK is called directly from the dropdown menu it doesn't always display the OSK, but with a timeout wrapper set to '0' it fixes the bug (I know... WTF?)
-                this._toggleOskTimeoutBugFix = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 0, () => {
+                toggleOskTimeoutBugFix = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 0, () => {
                     toggleOSK();
                 });
             });

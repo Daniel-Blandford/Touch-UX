@@ -1,6 +1,11 @@
 # Touch-UX
 Providing adjustments to Gnome-Desktop to help improve the experience on touch screen devices such as tablets, phones and PDA's running Gnome such as the PinePhone. This is in early development with more features expected later.
 
+<p align="center">
+  <img src="https://i.ibb.co/fr8gx6B/Screenshot-from-2022-05-31-11-15-52.png" width="350" title="touch-ux">
+  <img src="https://i.ibb.co/syvmj6g/Screenshot-from-2022-05-31-11-18-47.png" width="350" title="touch-ux">
+</p>
+
 # Project Goals
 * Touch-UX was developed as an initial starting point for touch screen device optimisations for Gnome-Desktop to make Gnome more practical on devices such as Linux smartphones, PDA's, Tablets and more.
 * The idea behind Touch-UX is to provide a single extension that enables most of the core essentials required to provide a usable touch screen device user experience without spending too much time configuring the device.

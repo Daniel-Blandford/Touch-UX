@@ -1,5 +1,5 @@
 # Touch-UX
-Providing adjustments to Gnome-Desktop to help improve the experience on touch screen devices such as tablets, phones and PDA's running Gnome such as the PinePhone. This is in early development with more features expected later.
+Providing adjustments to Gnome-Desktop to help improve the experience on touch screen devices such as tablets, phones and PDA's running Gnome such as the PinePhone.
 
 <p align="center">
   <img src="https://i.ibb.co/fr8gx6B/Screenshot-from-2022-05-31-11-15-52.png" width="350" title="touch-ux">

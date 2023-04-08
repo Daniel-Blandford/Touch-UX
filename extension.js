@@ -59,7 +59,9 @@ function enable() {
             Main.panel.addToStatusArea('statusBarButton', statusBarButton, 1);
         }
         else {
-            statusBarButton.destroy();
+        	if (!!statusBarButton) {
+        		statusBarButton.destroy();
+        	}
         }
     });
 }
@@ -67,7 +69,9 @@ function enable() {
 function disable() {
     Main.layoutManager.removeChrome(gestureContainer);
     Main.layoutManager.removeChrome(gestureBar);
-    statusBarButton.destroy();
+    if (!!statusBarButton) {
+    	statusBarButton.destroy();
+    }
     
     statusBarButton = null;
     settings = null;

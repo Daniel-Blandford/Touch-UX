@@ -25,3 +25,7 @@ Please bare in mind that I'm new to Linux/Gnome development and I also have a da
 # Donate
 Any support via donations is greatly appreciated.
 https://www.paypal.com/donate/?hosted_button_id=PMLNRKNZ3F9VY
+
+# Additional contributors
+* gaussandhisgun:
+https://github.com/gaussandhisgun
